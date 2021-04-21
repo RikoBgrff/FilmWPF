@@ -1,0 +1,46 @@
+﻿<Window x:Class="Filmagine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Filmagine"
+        mc:Ignorable="d"
+        Title="FilMagine" Height="600" Width="1000" WindowStartupLocation="CenterScreen" Icon="GraphicResources\icon.png" WindowState="Normal">
+    <!--<MediaElement x:Name="intro" LoadedBehavior="Play"/>-->
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Orientation="Horizontal" Background="#0E0F14" HorizontalAlignment="Left" Width="381" Grid.ColumnSpan="2">
+            <Canvas>
+                <Button Canvas.Top="70" Style="{StaticResource ResourceKey=TaskBarButton}" Content="Home" Width="111" Height="50" Canvas.Left="28" Click="Button_Click" />
+                <Button Canvas.Top="130" Style="{StaticResource ResourceKey=TaskBarButton}" Content="Genre" Width="121" Height="50" Canvas.Left="23" />
+                <Button Canvas.Top="190" Style="{StaticResource ResourceKey=TaskBarButton}" Content="Favourites" Width="121" Height="50" Canvas.Left="29" />
+
+            </Canvas>
+        </StackPanel>
+        <WrapPanel Name="HomePanel" Background="#15151F" Grid.Column="1">
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster1"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster2"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster3"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster4"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster5"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster6"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster7"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster8"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster9"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster10"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster11"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster12"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster13"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster14"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster15"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster16"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster17"/>
+                <Image Margin="40,70" Height="200" Width="165" Source="ave.jpg" x:Name="Poster18"/>
+        </WrapPanel>
+    </Grid>
+
+</Window>
