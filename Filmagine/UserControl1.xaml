@@ -6,8 +6,5 @@
              xmlns:local="clr-namespace:Filmagine"
              mc:Ignorable="d" 
              d:DesignHeight="360" d:DesignWidth="540" Background="#15151F">
-    <Grid>
-        <Image Source="GraphicResources\icon.png" Margin="40,37,359,182"/>
-        <Label Content="AA" FontSize="30" Foreground="White" Margin="244,61,241,248"></Label>
-    </Grid>
+    <Grid/>
 </UserControl>

@@ -14,6 +14,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +37,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,7 +60,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserControl1.xaml.cs" />
+    <Compile Include="Models\Film.cs" />
+    <Compile Include="Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
     <Page Include="Dictionary1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -72,9 +80,9 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControl1.xaml">
-      <Generator>MSBuild:Compile</Generator>
+    <Page Include="Register.xaml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +103,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,11 +113,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="GraphicResources\settings.png" />
+    <Resource Include="GraphicResources\loginIcon.png" />
+    <Resource Include="GraphicResources\lock.png" />
+    <Resource Include="GraphicResources\person.png" />
+    <Resource Include="GraphicResources\mail.png" />
+    <Resource Include="GraphicResources\password.png" />
+    <Resource Include="GraphicResources\mailIcon.png" />
+    <Resource Include="GraphicResources\kurtlarvadisi.jpg" />
+    <Resource Include="GraphicResources\lacasadepapel.jpg" />
+    <Resource Include="GraphicResources\behzat.jpg" />
     <Resource Include="GraphicResources\searchIcon80px.png" />
     <Resource Include="GraphicResources\icon.png" />
     <Resource Include="GraphicResources\houseImage.png" />
     <Resource Include="GraphicResources\bluehouseImage.png" />
     <Resource Include="ave.jpg" />
+    <Resource Include="GraphicResources\fastandfurious.png" />
     <Content Include="GraphicResources\intro.mp4" />
     <Resource Include="GraphicResources\removedTv.png" />
   </ItemGroup>
